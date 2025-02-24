@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AM SaaS Developers</title>
+  <link rel="icon" type="image/png" href="images/AM SAAS DEVELOPERS.jpg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    /* Animation styles */
+    .about-section {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+    }
+    .about-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .about-img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      opacity: 0;
+      transform: scale(0.8);
+      transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+    }
+    .about-img.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+    /* Responsive typography adjustments */
+    @media (max-width: 768px) {
+      .about-section {
+        font-size: 0.9rem;
+      }
+    }
+    @media (max-width: 576px) {
+      .about-section {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <!-- Replace spaces with %20 if needed in URLs -->
+      <img src="images/AM SAAS DEVELOPERS.jpg" alt="Company Logo" width="45" height="45">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- About Content -->
+  <div class="container mt-5">
+    <h1 class="about-section text-center mb-4">About Us</h1>
+    <p class="about-section">
+      For Video Editing, Graphics Designing and Front-End Development – Contact us at 03237655443.<br><br>
+      <strong>Front-End Development</strong><br>
+      Focuses on the visual and interactive aspects of a website (HTML, CSS, JavaScript frameworks like React, Angular, Vue.js).<br><br>
+      <strong>Back-End Development</strong><br>
+      Handles the server, database, and business logic (Node.js, PHP, Python/Django, Ruby on Rails, etc.).<br><br>
+      <strong>Full-Stack Development</strong><br>
+      Combines both front-end and back-end expertise.<br><br>
+      <strong>E-Commerce Solutions</strong><br>
+      Development of online stores and payment gateway integrations.<br><br>
+      <strong>Platform Management</strong><br>
+      Create and manage profiles on platforms like Facebook, Instagram, LinkedIn, Twitter, TikTok, and Pinterest. Regular posting, monitoring, and engagement.<br><br>
+      <strong>Content Creation</strong><br>
+      Develop eye-catching visuals, videos, and copywriting optimized for each platform. Ensure content aligns with the brand’s tone and objectives.<br><br>
+      <strong>Paid Advertising Campaigns</strong><br>
+      Plan and execute paid social media ads (Facebook Ads, Instagram Ads, LinkedIn Ads, etc.). Focus on targeting specific demographics, interests, and behaviors for ROI-driven campaigns.<br><br>
+      <strong>Analytics and Performance Monitoring</strong><br>
+      Use tools like Google Analytics, Hootsuite, or HubSpot to track campaign performance. Adjust strategies based on data insights.<br><br>
+      <strong>Social Media Strategy Development</strong><br>
+      Tailored plans to grow followers, increase engagement, or boost conversions. Includes competitor analysis and trend research.<br><br>
+      <strong>Influencer Marketing</strong><br>
+      Collaborate with influencers to promote products and services. Identify, negotiate, and manage partnerships with content creators.<br><br>
+      <strong>Community Management</strong><br>
+      Respond to comments, messages, and reviews. Build and nurture an engaged online community.<br><br>
+      <strong>Contact Details:</strong><br>
+      Phone: 03237655443<br>
+      Industry: Software Development<br>
+      Company Size: 11-50 employees<br>
+      Founded: 2024<br>
+      Facebook: AM SaaS Developers<br>
+      Instagram: AM SaaS Developers<br>
+      Linkedin: AM SaaS Developers<br>
+
+      <strong><h1><b><center>Message From Ceo</center></b></h1></strong>
+
+      <strong><p><br>"At AM SaaS Develoers, we are more than just a SaaS development company—we are innovators, problem-solvers, and architects of the digital future. <br>Our mission is to create powerful, scalable, and user-friendly software solutions that empower businesses worldwide.<br>
+
+        <br> We believe in the power of technology to transform industries, streamline operations, and unlock new opportunities.<br> With a passionate team of developers, designers, and strategists, we are committed to delivering excellence, innovation, and reliability in every product we build.<br>
+        
+        Thank you for trusting us to be part of your journey. Together, we are shaping the future of software."<br>
+        
+        <br>[Atta Muhammad]<br>
+        <br>CEO, [AM SaaS Developers]<br>
+        
+        </p></strong>
+    </p>
+    <img src="images/AM SAAS DEVELOPERS.jpg" class="about-img d-block mx-auto mt-4" alt="About Us Image">
+  </div>
+  
+  <!-- Scroll-triggered reveal script -->
+  <script>
+    function revealOnScroll() {
+      const elements = document.querySelectorAll('.about-section, .about-img');
+      elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    // Initial check in case elements are in view on page load
+    revealOnScroll();
+  </script>
+  
+  <!-- Footer -->
+  <footer class="bg-dark text-center py-3 mt-4">
+    <p>&copy; 2025 AM SaaS Developers. All rights reserved.</p>
+  </footer>
+</body>
+</html>
